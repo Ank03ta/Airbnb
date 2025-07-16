@@ -1,6 +1,6 @@
 # 🏡 Airbnb Clone (Wonderlust)
 
-This is a backend-focused Airbnb Clone project built using **Node.js**, **Express.js**, and **MongoDB**, following the **MVC architecture**.
+This is a Airbnb Clone project built using **Node.js**, **Express.js**, **MongoDB**,**JavScript** following the **MVC architecture**.
 
 ---
 
@@ -41,8 +41,8 @@ AIRBNB
 ## 🚀 **How to Run Locally**
 
 1️⃣ **Clone the repository**
-git clone https://github.com/Ank03ta/airbnb.git
-cd airbnb-clone
+git clone https://github.com/Ank03ta/Airbnb.git
+cd Airbnb
 
 Install dependencies
 -> npm install
@@ -51,4 +51,4 @@ Install dependencies
 -> npm start
 
  ## Author
--Ankita Yadav
+- Ankita Yadav
