@@ -200,3 +200,19 @@ text-decoration: none !important;
   text-decoration: none;
   color: black;
 }
+
+@media screen and (max-width: 770px) {
+    .searchbar {
+        width: 200px!important;
+        margin-bottom: 1rem!important;
+    }
+    .navsignup{
+    background-color: #fe424d !important;
+    border: none !important;
+    color: white !important;
+    width: 80px !important;
+    margin:1rem ;
+    border-radius: 25rem;
+    text-align: center;
+}
+}
