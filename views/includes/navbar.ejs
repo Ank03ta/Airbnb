@@ -30,8 +30,8 @@
       <div class="navbar-nav ms-auto">
        <div class="createlisting"> <a class="nav-link " href="/listings/new">Airbnb your home</a></div>
         <% if(!currentUser){%>          
-          <a class="nav-link active" aria-current="page" href="/signup"><b>Sign up</b></a>
-          <a class="nav-link" href="/login"><b>Sign in</b></a>
+          <a class="nav-link active navsignup" aria-current="page" href="/signup"><b>Sign up</b></a>
+          <a class="nav-link navsignup" href="/login"><b>Sign in</b></a>
           <% } %>
           <% if(currentUser) {%>
           <button class="btn btn-danger logout"><a href="/logout">Logout</a></button>
