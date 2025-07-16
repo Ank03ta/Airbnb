@@ -21,7 +21,7 @@ const LocalStrategy = require("passport-local");
 const User = require("./models/user.js");
 
 
-const atlasDB_URL = process.env.AltasDB_URL 
+const ATLAS_DB_URL = process.env.ATLAS_DB_URL 
 
 main().then(()=>
 {
@@ -33,7 +33,7 @@ main().then(()=>
 })
 
 async function main() {
-    await mongoose.connect(atlasDB_URL);
+    await mongoose.connect(ATLAS_DB_URL);
 }
 
 
@@ -47,15 +47,16 @@ app.use(express.static(path.join(__dirname,"public")));
 
 
 const store =  MongoDBStore.create({
-     mongoUrl: atlasDB_URL,
+    mongoUrl: ATLAS_DB_URL,
     crypto:{
         secret: process.env.SECRET,
     },
     touchAfter: 24 * 3600, // 24 hours
     });
-    store.on("error", () =>{
-        console.log("Session store error", err);
-    })
+    store.on("error", function (err) {
+    console.log("Session store error:", err);
+});
+
 
 const sessionOption = {
     store: store,
