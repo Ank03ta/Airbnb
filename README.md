@@ -44,10 +44,10 @@ AIRBNB
 git clone https://github.com/Ank03ta/Airbnb.git
 cd Airbnb
 
-Install dependencies
+2️⃣ Install dependencies
 -> npm install
 
-4️⃣ Run the server
+3️⃣ Run the server
 -> npm start
 
  ## Author
